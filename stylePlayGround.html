@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radial Gradient</title>
+</head>
+<style>
+    .radialGradient {
+        background: radial-gradient(ellipse at top, #92B4EC, #FFE69A, transparent);
+        height: 100vh; /*vh: fenster ansicht höhe*/
+        background-size: 400% 400%;
+        -webkit-animation: wow 12s infinite;
+    }
+
+    @-webkit-keyframes wow {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 100%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+</style>
+<body class="radialGradient">
+
+</body>
+</html>
